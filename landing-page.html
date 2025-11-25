@@ -1,0 +1,362 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>Shiksha</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/style4.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet"> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="js/uk2.js" type="text/javascript"></script>
+ <script>
+  $(document).ready(function(){
+  $('.mobileForm').click(function(){
+    $('.headerRight').show();
+	$('.overlay').show();
+   });
+   $('.close').click(function(){
+    $('.headerRight').hide();
+	$('.overlay').hide();
+   });
+   
+   $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    var target = this.hash;
+	    var $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        // window.location.hash = target;
+	    });
+	});
+	
+   
+  });
+ </script>
+ <style>
+ @keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 4s infinite;
+   -moz-animation: flickerAnimation 4s infinite;
+   -o-animation: flickerAnimation 4s infinite;
+    animation: flickerAnimation 4s infinite;
+}
+
+@keyframes flickerAnimation2 {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation2{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation2{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation2{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+.animate-flicker2 {
+   -webkit-animation: flickerAnimation2 4s infinite;
+   -moz-animation: flickerAnimation2 4s infinite;
+   -o-animation: flickerAnimation2 4s infinite;
+    animation: flickerAnimation2 4s infinite;
+}
+</style>
+</head>
+<body>
+<section class="overlay"></section>
+<section class="top">
+ <div class="topContainer">
+  <header>
+   <div class="logo"><a href="index.html"><img src="images/logo.png" class="logo1" /><img src="images/logo2.png" class="logo2" /></a></div>
+   <div class="headerText">#LightsCameraCampus</div>
+  </header>
+  <div class="clear"></div>
+  <div class="headerInner">
+  <div class="headerLeft">
+   <div class="headerLeftBox1">
+    <div class="slider">
+     <div class="heart1"><img src="images/h1.png" /></div>
+     <div class="heart2"><img src="images/h2.png" /></div>
+     <div class="heart3"><img src="images/h3.png" /></div>
+     <div class="img1"><img src="images/img3.png" class="animate-flicker" /></div>
+     <div class="img2"><img src="images/img4.png" class="animate-flicker2" /></div>
+    </div>
+    <div class="frame"><img src="images/frame.png" class="frame1" /> <img src="images/frame2.png" class="frame2" /></div>
+   </div>
+   <div class="headerLeftBox2"><img src="images/img1.png" alt="Light Camera Action" class="LKA1" /><img src="images/img9.png" alt="Light Camera Action" class="LKA2" /></div>
+  </div>
+  <div class="headerRight">
+   <div class="formInner">
+   <div class="formMain">
+    <div class="formHeader"><h5>CONTEST REGISTRATION FORM</h5><span class="close">x</span></div>
+    <div class="formBody">
+     <form action="https://www.shiksha.com/mailer/Mailer/autoLogin/email~&lt;!-- #encodedemail --&gt;&lt;!-- encodedemail# --&gt;" method="post" name="form" autocomplete="off" id="myForm">
+      <ul>
+       <li><span><img src="https://www.ieplads.com/mailers/2023_ui/studyabroad/lead-form-19april/images/i1.png" /></span><input type="text" id="firstName" name="firstName" placeholder="Name" class="input" required="required" /></li>
+       <li><span><img src="https://www.ieplads.com/mailers/2023_ui/studyabroad/lead-form-19april/images/i3.png" /></span><input type="email" id="email" name="email" placeholder="Email Address" class="input" required="required" /></li>
+       <li><span><img src="https://www.ieplads.com/mailers/2023_ui/studyabroad/lead-form-19april/images/i2.png" /></span><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" maxlength="10" class="input" required="required" /></li>
+       <li><span><img src="images/f-4.png" /></span><input type="text" id="college" name="college" placeholder="College Name" class="input" required="required" /></li>
+       <li><span><img src="images/f-5.png" /></span><input type="text" id="course" name="course" placeholder="Course (optional)" class="input" />
+       <input type='hidden' name='mfid' value='feJUWCLjgbtVehtJbS2l' />
+       </li>       
+      </ul>
+      <div class="clear"></div>
+      <input type="hidden" value="https://www.ieplads.com/mailers/2024_ui/shiksha/shiksha-lp-03jan/thankyou.html" name="redirectURL"> 
+      <input type="submit" value="Register Now" class="submit" onClick="return formValidation()" />
+      <p>
+      <input type="checkbox" id="checkbox" name="checkbox" class="" value="Yes" />
+            <label class="choice" for="">I have read through and understood the <a href="https://www.shiksha.com/shikshaHelp/ShikshaHelp/termCondition" target="_blank">terms & condition</a> and hereby consent to participate in the contest.</label></p>
+     </form>
+    </div>
+   </div>
+  </div>
+  </div>
+  <div class="mobileForm">
+   <h3>CONTEST REGISTRATION FORM</h3>
+  </div>
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec1">
+ <div class="container">
+  <div class="mainInner">
+   <ul>
+    <li><a href="#section1">Contest Guidelines</a></li>
+    <li><a href="#section2">Video Guidelines</a></li>
+    <li><a href="terms-conditions.html">T&Cs </a></li>
+   </ul>
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec2">
+ <div class="container">
+  <div class="mainInner">
+   <h3><strong>About the Contest</strong></h3>
+   <h4>Calling All Student Superstars & Budding Content Creators! </h4>
+   <p>If you are a college student with a story to tell, it's time to showcase your life on campus!</p>
+   <p>Show off the academic prowess of your college, hostel antics, group hangouts, and the thrilling roller-coaster that is your college life through an electrifying campus video. </p>
+   <p>Unleash your inner Spielberg, win fabulous prizes & make your college the talk of the town!</p>   
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec3">
+ <div class="container">
+  <div class="mainInner">
+   <div class="col3_left">
+    <h2>Our <span>Aim</span></h3>
+    <p>To share credible campus life experiences & stories with <strong>Shiksha's 20 Million+ monthly audience</strong> that is taking critical college & course selection decisions. </p>
+    <p>Your story will help the students to take a more informed decision</p>   
+   </div>
+   <div class="col3_right"><img src="images/img5.png" /></div>   
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec4">
+ <div class="container">
+  <div class="mainInner">
+   <h3><strong>Rewards</strong> & <strong>Prizes to be Won</strong></h3>
+   <ul>
+    <li>
+     <div class="imgCol4"><img src="images/i1.png" /></div>
+     <h5>Cash Prizes</h5>
+     <p>Including early bird<br /> & weekly prizes<br /> worth over <strong>&#8377; 1 lakh</strong><br /> to be won!</p>
+    </li>
+    <li>
+     <div class="imgCol4"><img src="images/i2.png" /></div>
+     <h5>Win an Internship</h5>
+     <p>opportunity to win a<br /> full-fledged on-campus internship with Shiksha's marketing team</p>
+    </li>
+    <li>
+     <div class="imgCol4"><img src="images/i3.png" /></div>
+     <h5>Get Featured</h5>
+     <p>winning Videos get featured on the Shiksha’s Insta, Youtube channel & shiksha.com</p>
+    </li>
+   </ul>   
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec5">
+ <div class="container">
+  <div class="mainInner">
+   <h3><strong>HOW TO PARTICIPATE?</strong></h3>
+   <div class="box5">
+    <img src="images/7.png" class="bullet" />
+    <h4>Step 1 </h4>
+    <p><strong style="font-size:17px;">Register for the contest by filling the form</strong></p>
+   </div>
+   <div class="box5">
+    <img src="images/8.png" class="bullet" />
+    <h4 style="color:#ef5206">Step 2 </h4>
+    <p><strong style="font-size:17px;">Create a college review video of up to 5 minutes</strong> (as many as you want)<br />Put on your director's hat & pick one or more topics from the options below</p>
+   </div>
+   <div class="box5">
+    <ul>
+     <li>
+      <div class="num"><img src="images/t-1.png" /></div>
+      <div class="text">How is campus life? Showcase the best bits about your day in college!</div>
+     </li>
+     <li>
+      <div class="num"><img src="images/t-2.png" /></div>
+      <div class="text">Two things you wish you could change in your campus
+</div>
+     </li>
+     <li>
+      <div class="num"><img src="images/t-3.png" /></div>
+      <div class="text">The most popular clubs/societies in your college? Which is your favourite and why?
+</div>
+     </li>
+     <li>
+      <div class="num"><img src="images/t-4.png" /></div>
+      <div class="text">What should freshers expect when they become a part of your college?</div>
+     </li>
+     <li>
+      <div class="num"><img src="images/t-5.png" /></div>
+      <div class="text">Show us your favourite hangout spot, and tell us why you like it</div>
+     </li>
+     <li>
+      <div class="num"><img src="images/t-6.png" /></div>
+      <div class="text">Most interesting things about the course you are studying  </div>
+     </li>
+    </ul>
+   </div>
+   <div class="box5">
+    <img src="images/9.png" class="bullet" />
+    <h4 style="color:#008086">Step 3 </h4>
+    <p><strong style="font-size:17px;">Mail it to <a href="mailto:marketing@shiksha.com" target="_blank" style="color:#09818f; text-decoration:none; font-weight:700;">marketing@shiksha.com</a></strong><bR />If sharing a drive link, please accept the access request from Shiksha gmail ID.  </p>
+   </div>   
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec6">
+ <div class="container">
+  <div class="mainInner">
+   <div class="sec6_left">
+    <ul class="ul1">
+     <li><img src="images/img8n.png" /></li>
+     <li><img src="images/img7.png" class="img6" /></li>
+    </ul>
+    <div class="clear"></div>
+    <h6>video will be judged on the following criteria</h6>
+    <ul class="ul2">
+     <li>Creativity </li>
+     <li>Quality of Story telling & Articulation</li>
+     <li>Authenticity of Information  </li>
+     <li>Quality of video packaging: footage, voice, editing  </li>
+    </ul>
+   </div>   
+   <div class="sec6_right"><img src="images/img6.png" /></div>      
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec7">
+ <div class="container">
+  <div class="mainInner" id="section1">
+   <h3><strong>Contest Guidelines </strong></h3>   
+   <ul>
+    <li style="background-position:left 13px;">Contest Duration: <strong>10<sup>th</sup> January</strong> to <strong>29<sup>th</sup> February 2024</strong></li>
+    <li>Participants must be currently enrolled students of the college</li>
+    <li>Video length should not exceed more then <strong>5 minutes</strong></li>
+    <li>The video or content should not infringe any third party intellectual property or copyrights</li>
+    <li>It should be original unpublished content</li>
+    <li>Inappropriate or offensive content will be disqualified</li>
+    <li>The video should do complete justice to the topic that has been selected by the creator</li>
+    <li>The video should be mailed to <a href="mailto:marketing@shiksha.com" target="_blank" style="color:#09818f; text-decoration:none; font-weight:700;">marketing@shiksha.com</a><br />File name format to follow: <strong>name_college_course</strong></li>
+    <li>Don't forget to share your contact details on mail body and share access to video drive links on Shiksha Gmail ID</li>
+   </ul>      
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec7 sec8">
+ <div class="container">
+  <div class="mainInner">
+   <h3 id="section2"><strong>Video Guidelines </strong></h3>   
+   <ul>
+    <li>Videos must be recorded in HD video setting</li>
+    <li>The lighting and audio quality of the video should be good</li>
+    <li>Ensure the video has maximum college coverage</li>
+    <li>Please include original and <strong>substantial campus footage</strong></li>
+    <li>Ensure the video is stable and smooth</li>
+    <li>Please <strong>DO NOT</strong> use any background music</li>
+    <li>The video produced must be in English, Hinglish or Hindi</li>
+    <li>Videos must be recorded in participant’s college campus or areas being talked about in the video</li>
+    <li>Videos should have HD quality footages. To make it vibrant you may include both outdoor or indoor HD quality footages</li>
+    <li>Duration of video should not exceed <strong>5 minutes</strong></li>
+   </ul>      
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<section class="sec9">
+ <div class="container">
+  <div class="sec9_left">
+   <h6>Follow Us:</h6>   
+   <p>Enter the contest by filling out the registration form and get all contest-related updates on your registered email address Follow Shiksha's Instagram and YouTube page to see the winning Videos</p>      
+  </div>
+  <div class="sec9_right">
+   <ul>
+    <li><a href="https://bit.ly/47bEnlM" target="_blank"><img src="images/insta.png" /></a></li>
+    <li><a href="https://bit.ly/3vhEDCt" target="_blank"><img src="images/you.png" /></a></li>
+    <li><a href="https://bit.ly/4auADig" target="_blank"><img src="images/fb.png" /></a></li>
+    <li><a href="https://bit.ly/3RSVjZS" target="_blank"><img src="images/tw.png" /></a></li>
+   </ul>
+  </div>
+ </div>
+</section>
+<div class="clear"></div>
+
+<footer>
+ <div class="container">
+  <p>Terms and conditions apply. This contest is not affiliated with Instagram. The prizes are sponsored by Shiksha.com, Info Edge India Ltd.</p>
+ </div>
+</footer>
+
+</body>
+</html>
